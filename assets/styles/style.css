@@ -22,3 +22,17 @@
   --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
 }
 
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: var(--bg-color);
+}
+
+.wrapper {
+   position: relative;
+   width: 66rem;
+   height: 45rem;
+   background: red;
+}
