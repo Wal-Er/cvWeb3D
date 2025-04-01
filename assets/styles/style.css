@@ -228,14 +228,14 @@ body {
 
 .page-number {
    position: absolute;
-   bottom: -3rem;
+   bottom: 1.2rem;
    left: 50%;
    transform: translateX(-50%);
 }
 
 .nextprev-btn {
    position: absolute;
-   bottom: -3.1rem;
+   bottom: .9rem;
    right: 1rem;
    width: 2rem;
    height: 2rem;
@@ -250,4 +250,8 @@ body {
 
 .nextprev-btn:hover {
    color: var(--main-color);
+}
+
+.nextprev-btn.back {
+   left: 1.5rem;
 }
