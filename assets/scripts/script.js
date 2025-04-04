@@ -8,8 +8,14 @@ pageTurnBtn.forEach((el, index) => {
 
       if (pageTurn.classList.contains('turn')) {
          pageTurn.classList.remove('turn');
+         setTimeout(() => {
+            pageTurn.style.zIndex = 20 - index;
+         }, 500);
       } else {
          pageTurn.classList.add('turn');
+         setTimeout(() => {
+            pageTurn.style.zIndex = 20 + index;
+         }, 500);
       }
    }
 });
