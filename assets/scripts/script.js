@@ -64,6 +64,12 @@ backProfileBtn.onclick = () => {
 }
 
 //opening animation
+const coverRight = document.querySelector('.cover.cover-right');
+
 //opening animation (cover right animation)
+setTimeout(() => {
+   coverRight.classList.add('turn');
+}, 2100);
+
 //opening animation (page left or profile page animation)
 //opening animation (all page right animation)
