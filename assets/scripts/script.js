@@ -55,8 +55,9 @@ backProfileBtn.onclick = () => {
       setTimeout(() => {
          reverseIndex();
          pages[pageNumber].classList.remove('turn');
-
+         
          setTimeout(() => {
+            reverseIndex();
             pages[pageNumber].style.zIndex = 10 + index;
          }, 500);
       }, (index + 1) * 200 + 100);
@@ -86,8 +87,9 @@ pages.forEach((_, index) => {
    setTimeout(() => {
       reverseIndex();
       pages[pageNumber].classList.remove('turn');
-
+      
       setTimeout(() => {
+         reverseIndex();
          pages[pageNumber].style.zIndex = 10 + index;
       }, 500);
    }, (index + 1) * 200 + 2100);
